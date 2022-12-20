@@ -1,0 +1,20 @@
+@import "./utils/variables";
+@import "./base/reset";
+@import "./utils/placeholder";
+@import "./base/common";
+
+@import "./components/page";
+@import "./components/btn";
+
+@import "./layouts/header";
+@import "./components/logo";
+@import "./layouts/hero";
+@import "./layouts/terms";
+@import "./layouts/about";
+@import "./layouts/comand";
+@import "./components/icons";
+@import "./layouts/clients";
+@import "./layouts/work";
+
+@import "./layouts/footer";
+@import "./layouts/modal";

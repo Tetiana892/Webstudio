@@ -1,0 +1,31 @@
+.clients {
+  padding-bottom: var(--card-set-gap);
+  padding-top: var(--card-set-gap);
+
+  background-color: var(--primari-header-color);
+
+  &-title {
+    display: block;
+    margin-bottom: 50px;
+
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.25;
+    letter-spacing: 0.03em;
+    text-align: center;
+  }
+}
+.clients-list.list {
+  @extend %flex-aling-justify;
+}
+
+.clients-items {
+  width: 170px;
+  height: 92px;
+  &:not(:last-child) {
+    margin-right: 30px;
+  }
+  & {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
