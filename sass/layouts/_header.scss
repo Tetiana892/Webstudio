@@ -1,8 +1,11 @@
 .header {
   box-sizing: border-box;
   background-color: var(--primari-header-color);
+}
+.header--work {
   border-bottom: 1px solid var(--work-bg-color);
 }
+
 .main-nav {
   @extend %flex-aling;
 }

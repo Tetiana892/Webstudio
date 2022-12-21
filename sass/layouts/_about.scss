@@ -14,6 +14,9 @@
     letter-spacing: 0.03em;
     text-align: center;
   }
+  @media screen and (max-width: 1200px) {
+    display: none;
+  }
 }
 .about-list.list {
   display: flex;

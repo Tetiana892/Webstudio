@@ -42,7 +42,7 @@ ul {
   align-items: center;
 }
 
-.modal-close, .clients-list.list, .join__soc, .clients-link, .comand-soc-link, .comand-soc-list, .terms-icon-items, .terms-icon-list {
+.modal-close, .clients-list.list, .join__soc, .clients-link, .comand-soc-link, .comand-soc-list, .terms-icon-items {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -55,14 +55,28 @@ body {
 }
 
 .container {
-  width: 1200px;
+  width: 100%;
   padding: 0 15px;
   margin: 0 auto;
 }
+@media screen and (min-width: 480px) {
+  .container {
+    width: 480px;
+  }
+}
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container {
+    width: 1200px;
+  }
+}
 
 img {
-  display: block;
-  max-width: 100%;
+  width: 100%;
   height: auto;
 }
 
@@ -98,6 +112,9 @@ button {
 .header {
   box-sizing: border-box;
   background-color: var(--primari-header-color);
+}
+
+.header--work {
   border-bottom: 1px solid var(--work-bg-color);
 }
 
@@ -239,31 +256,37 @@ button {
 }
 
 .section-terms {
-  padding-bottom: 0;
-  padding-top: var(--card-set-gap);
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--primari-header-color);
 }
 
 .terms-icon-items {
   margin-bottom: 30px;
-  width: 270px;
   height: 120px;
   background-color: var(--comand-header-color);
   border-radius: 4px;
 }
-.terms-icon-items:not(:last-child) {
-  margin-right: 30px;
+
+@media screen and (min-width: 768px) {
+  .container-terms {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 60px) / 2);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .container-terms {
+    display: flex;
+    flex-flow: nowrap;
+    flex-basis: calc((100% - 90px) / 4);
+    gap: 30px;
+  }
 }
 
-.terms.list {
-  display: flex;
-}
-
-.terms-list.list {
-  flex-basis: calc((100% - 90px) / 4);
-}
 .terms-list.list:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
 
 .terms-title {
@@ -273,6 +296,11 @@ button {
   line-height: 1.14;
   letter-spacing: 0.03em;
   text-transform: uppercase;
+}
+@media screen and (max-width: 768px) {
+  .terms-title {
+    text-align: center;
+  }
 }
 
 .terms-item {
@@ -295,6 +323,11 @@ button {
   line-height: 1.16;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (max-width: 1200px) {
+  .about {
+    display: none;
+  }
 }
 
 .about-list.list {
