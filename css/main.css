@@ -42,7 +42,7 @@ ul {
   align-items: center;
 }
 
-.modal-close, .clients-list.list, .join__soc, .clients-link, .comand-soc-link, .comand-soc-list, .terms__icon {
+.modal-close, .join__soc, .clients-link, .comand-soc-link, .comand-soc-list, .terms__icon {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -476,6 +476,11 @@ button {
 .comand-items:not(:last-child) {
   margin-bottom: 30px;
 }
+@media screen and (min-width: 768px) {
+  .comand-items:not(:last-child) {
+    margin-bottom: 0px;
+  }
+}
 @media screen and (min-width: 1200px) {
   .comand-items:not(:last-child) {
     margin-right: 30px;
@@ -562,29 +567,56 @@ button {
 }
 
 .clients {
-  padding-bottom: var(--card-set-gap);
-  padding-top: var(--card-set-gap);
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--primari-header-color);
+}
+@media screen and (min-width: 1200px) {
+  .clients {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .clients-title {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: center;
 }
+@media screen and (min-width: 1200px) {
+  .clients-title {
+    margin-bottom: 50px;
+  }
+}
+
+.clients-list.list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 30px;
+  flex-basis: calc((100% - 15px) / 2);
+}
+@media screen and (min-width: 768px) {
+  .clients-list.list {
+    flex-basis: calc((100% - 15px) / 3);
+  }
+}
 
 .clients-items {
-  width: 170px;
+  width: 210px;
   height: 92px;
 }
-.clients-items:not(:last-child) {
-  margin-right: 30px;
+@media screen and (min-width: 768px) {
+  .clients-items {
+    width: 226px;
+  }
 }
-.clients-items {
-  flex-basis: calc((100% - 150px) / 6);
+@media screen and (min-width: 1200px) {
+  .clients-items {
+    width: 170px;
+  }
 }
 
 .section-work {
@@ -707,9 +739,7 @@ button {
 }
 
 .container.footer-nav {
-  display: flex;
-  align-content: center;
-  align-items: baseline;
+  text-align: center;
   justify-content: space-between;
 }
 
