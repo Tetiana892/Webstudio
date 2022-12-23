@@ -215,11 +215,11 @@ button {
 
 .hero {
   text-align: center;
-  padding-top: 200px;
-  padding-bottom: 200px;
-  max-width: 1600px;
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 480px;
   margin: 0 auto;
-  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../img/tityle.jpg);
+  background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header_tel.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
@@ -234,6 +234,35 @@ button {
   letter-spacing: 0.06em;
   text-transform: uppercase;
   color: var(--another-text);
+}
+@media (min-device-pixel-ratio: 2), (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header_tel-2x.jpg);
+  }
+}
+@media screen and (min-width: 768px) {
+  .hero {
+    max-width: 768px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header_tablet.jpg);
+  }
+}
+@media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header_tablet-2x.jpg);
+  }
+}
+@media screen and (min-width: 1200px) {
+  .hero {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    max-width: 1600px;
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tityle.jpg);
+  }
+}
+@media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
+  .hero {
+    background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tityle-2x.jpg);
+  }
 }
 
 .hero-btn-pointer {
@@ -380,9 +409,15 @@ button {
 }
 
 .comand {
-  padding-bottom: var(--card-set-gap);
-  padding-top: var(--card-set-gap);
+  padding-bottom: 60px;
+  padding-top: 60px;
   background-color: var(--comand-header-color);
+}
+@media screen and (min-width: 1200px) {
+  .comand {
+    padding-bottom: 94px;
+    padding-top: 94px;
+  }
 }
 .comand-title {
   margin-bottom: 10px;
@@ -392,18 +427,44 @@ button {
   letter-spacing: 0.03em;
 }
 
-.comand-list.list {
-  display: flex;
+.comand-foto {
+  padding-top: 30px;
+  padding-bottom: 24px;
+}
+@media screen and (min-width: 1200px) {
+  .comand-foto {
+    padding-bottom: 30px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .comand-list.list {
+    display: flex;
+    flex-wrap: wrap;
+    flex-basis: calc((100% - 30px) / 2);
+    gap: 30px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .comand-list.list {
+    flex-wrap: nowrap;
+    flex-basis: calc((100% - 90px) / 4);
+  }
 }
 
 .comand-pre-title {
   display: block;
-  margin-bottom: 50px;
+  margin-bottom: 30px;
   font-weight: 700;
   font-size: 36px;
   line-height: 1.25;
   letter-spacing: 0.03em;
   text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .comand-pre-title {
+    margin-bottom: 50px;
+  }
 }
 
 .comand-items {
@@ -413,12 +474,12 @@ button {
   text-align: center;
 }
 .comand-items:not(:last-child) {
-  margin-right: 30px;
+  margin-bottom: 30px;
 }
-
-.comand-foto {
-  padding-top: 30px;
-  padding-bottom: 30px;
+@media screen and (min-width: 1200px) {
+  .comand-items:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .comand-post-title {
@@ -589,7 +650,7 @@ button {
 
 .work__cover {
   position: absolute;
-  transform: translateY(100%);
+  transform: translateY(101%);
   transition: transform 250ms linear;
   top: 0;
   padding: 63px 24px;
