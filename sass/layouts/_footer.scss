@@ -9,12 +9,36 @@
 
 .container.footer-nav {
   text-align: center;
-  // display: flex;
-  // align-content: center;
-  // align-items: baseline;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
   justify-content: space-between;
+
+  @media screen and (min-width: 1200px) {
+    align-items: baseline;
+    flex-direction: row;
+    text-align: left;
+  }
 }
 
+.footer-tablet {
+  @media screen and (min-width: 768px) {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-bottom: 0;
+    gap: 94px;
+  }
+}
+.address__items {
+  margin-bottom: 60px;
+  @media screen and (min-width: 768px) {
+    margin-bottom: 0;
+  }
+}
 .address__mail.list {
   font-style: normal;
   margin-top: 9px;
@@ -63,14 +87,34 @@
   text-transform: uppercase;
   color: var(--another-text);
 }
-
-.form {
+.join {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+}
+.join__list.list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  @media screen and (min-width: 1200px) {
+    justify-content: left;
+    text-align: end;
+  }
+}
+.form {
+  @media screen and (min-width: 1200px) {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .form__action {
-  margin-right: 12px;
+  margin-top: 60px;
+  @media screen and (min-width: 768px) {
+    margin-top: 0;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 12px;
+  }
 }
 
 .form__label {
@@ -85,6 +129,7 @@
 
   color: var(--primari-header-color);
 }
+
 .form-input {
   padding-top: 15px;
   padding-bottom: 15px;
@@ -113,7 +158,10 @@
     color: rgba(255, 255, 255, 0.6);
   }
 }
-
+.submit {
+  display: flex;
+  justify-content: center;
+}
 .submit__btn {
   @extend %flex-aling;
   padding-top: 10px;
@@ -135,6 +183,7 @@
     background: var(--accent-color);
     color: var(--another-text);
   }
+  margin-top: 20px;
 }
 
 .submint__text {

@@ -596,21 +596,15 @@ button {
   display: flex;
   flex-wrap: wrap;
   gap: 30px;
-  flex-basis: calc((100% - 15px) / 2);
-}
-@media screen and (min-width: 768px) {
-  .clients-list.list {
-    flex-basis: calc((100% - 15px) / 3);
-  }
 }
 
 .clients-items {
-  width: 210px;
+  width: calc((100% - 60px) / 2);
   height: 92px;
 }
 @media screen and (min-width: 768px) {
   .clients-items {
-    width: 226px;
+    width: calc((100% - 90px) / 3);
   }
 }
 @media screen and (min-width: 1200px) {
@@ -740,7 +734,41 @@ button {
 
 .container.footer-nav {
   text-align: center;
+  display: flex;
+  align-content: center;
+  flex-direction: column;
   justify-content: space-between;
+}
+@media screen and (min-width: 1200px) {
+  .container.footer-nav {
+    align-items: baseline;
+    flex-direction: row;
+    text-align: left;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .footer-tablet {
+    display: flex;
+    align-items: baseline;
+    justify-content: space-around;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .footer-tablet {
+    margin-bottom: 0;
+    gap: 94px;
+  }
+}
+
+.address__items {
+  margin-bottom: 60px;
+}
+@media screen and (min-width: 768px) {
+  .address__items {
+    margin-bottom: 0;
+  }
 }
 
 .address__mail.list {
@@ -789,13 +817,42 @@ button {
   color: var(--another-text);
 }
 
-.form {
+.join {
   display: flex;
-  align-items: flex-end;
+  justify-content: center;
+}
+
+.join__list.list {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+@media screen and (min-width: 1200px) {
+  .join__list.list {
+    justify-content: left;
+    text-align: end;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .form {
+    display: flex;
+    align-items: flex-end;
+  }
 }
 
 .form__action {
-  margin-right: 12px;
+  margin-top: 60px;
+}
+@media screen and (min-width: 768px) {
+  .form__action {
+    margin-top: 0;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .form__action {
+    margin-right: 12px;
+  }
 }
 
 .form__label {
@@ -853,6 +910,11 @@ button {
   color: rgba(255, 255, 255, 0.6);
 }
 
+.submit {
+  display: flex;
+  justify-content: center;
+}
+
 .submit__btn {
   padding-top: 10px;
   padding-bottom: 10px;
@@ -866,6 +928,7 @@ button {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   transition: background-color color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  margin-top: 20px;
 }
 .submit__btn:hover, .submit__btn:focus {
   background: var(--accent-color);
