@@ -26,6 +26,7 @@
           <a href="./index.html" class="logo link"
             >Web<span class="accent">Studio</span></a
           >
+
           <div class="header-nav_tel">
             <ul class="header-nav header-nav--left list">
               <li class="header-nav__list link">
@@ -67,6 +68,104 @@
               >
             </li>
           </ul>
+        </div>
+        <button
+          type="button"
+          class="menu-toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
+        >
+          <svg width="40" height="40" aria-label="Перемикач мобільного меню">
+            <use
+              class="icon-cross"
+              href="./img/checked.svg#icon-menu_24px"
+            ></use>
+          </svg>
+        </button>
+        <div class="menu-container js-menu-container" id="mobile-menu">
+          <div class="container">
+            <div class="menu-contant">
+              <div class="navigation">
+                <button type="button" class="menu-toggle js-close-menu">
+                  <svg width="19" height="19">
+                    <use
+                      class="icon-menu"
+                      href="./img/checked.svg#icon-close_24px"
+                    ></use>
+                  </svg>
+                </button>
+                <ul class="mob-naviganion list">
+                  <li class="mob-naviganion__list link">
+                    <a href="./index.html" class="mob-naviganion__main link"
+                      >Студія</a
+                    >
+                  </li>
+                  <li class="mob-naviganion__list link">
+                    <a href="./portfolio.html" class="mob-naviganion__main link"
+                      >Портфоліо</a
+                    >
+                  </li>
+                  <li class="mob-naviganion__list link">
+                    <a href="#" class="mob-naviganion__main link">Контакти</a>
+                  </li>
+                </ul>
+              </div>
+              <div class="contacts">
+                <ul class="mob-contacts list">
+                  <li class="mob-contacts__item mob-contacts__item--tel link">
+                    <a
+                      href="tel:+380961111111"
+                      class="mob-contacts__mail mob-contacts__mail--tel link"
+                    >
+                      +38 096 111 11 11</a
+                    >
+                  </li>
+                  <li class="mob-contacts__item link">
+                    <a
+                      href="mailto:info@devstudio.com"
+                      class="mob-contacts__mail link"
+                      >info@devstudio.com
+                    </a>
+                  </li>
+                </ul>
+
+                <ul class="mob-soc-link list">
+                  <li class="mob-soc-list">
+                    <a
+                      href="#"
+                      rel="noopener noreferrer nofollow"
+                      class="mob-social link"
+                      >Instagram</a
+                    >
+                  </li>
+                  <li class="mob-soc-list">
+                    <a
+                      href="#"
+                      rel="noopener noreferrer nofollow"
+                      class="mob-social link"
+                      >Twitter</a
+                    >
+                  </li>
+                  <li class="mob-soc-list">
+                    <a
+                      href="#"
+                      rel="noopener noreferrer nofollow"
+                      class="mob-social link"
+                      >Facebook</a
+                    >
+                  </li>
+                  <li class="mob-soc-list">
+                    <a
+                      href="#"
+                      rel="noopener noreferrer nofollow"
+                      class="mob-social link"
+                      >LinkedIn</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </header>
@@ -657,5 +756,12 @@
       </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="js/mobile.js"></script>
   </body>
 </html>
