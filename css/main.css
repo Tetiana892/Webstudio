@@ -1192,9 +1192,6 @@ button {
 .agreement {
   display: flex;
   margin-left: 5px;
-  font-size: 14px;
-  line-height: 1.7142857143;
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: underline;
 }
@@ -1210,10 +1207,16 @@ button {
 }
 
 .modal-terms {
-  font-size: 14px;
-  line-height: 1.7142857143;
+  font-size: 12px;
+  line-height: 1.1666666667;
   letter-spacing: 0.03em;
   color: var(--second-text);
+}
+@media screen and (min-width: 1200px) {
+  .modal-terms {
+    font-size: 14px;
+    line-height: 1.7142857143;
+  }
 }
 .modal-terms::before {
   content: "";

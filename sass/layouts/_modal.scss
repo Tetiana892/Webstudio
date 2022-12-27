@@ -164,9 +164,6 @@
 .agreement {
   display: flex;
   margin-left: 5px;
-  font-size: 14px;
-  line-height: calc(24 / 14);
-  letter-spacing: 0.03em;
   color: var(--accent-color);
   text-decoration: underline;
 }
@@ -182,11 +179,15 @@
 }
 .modal-terms {
   @extend %flex-aling;
-  font-size: 14px;
-  line-height: calc(24 / 14);
+  font-size: 12px;
+  line-height: calc(14 / 12);
   letter-spacing: 0.03em;
   color: var(--second-text);
 
+  @media screen and(min-width:1200px) {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+  }
   &::before {
     content: "";
     width: 16px;
