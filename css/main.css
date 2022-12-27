@@ -274,6 +274,9 @@ button {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header_tel-2x.jpg);
   }
+  .hero .box {
+    background-image: url("photo@2x.png");
+  }
 }
 @media screen and (min-width: 768px) {
   .hero {
@@ -284,6 +287,9 @@ button {
 @media screen and (min-width: 768px) and (min-device-pixel-ratio: 2), screen and (min-width: 768px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 768px) and (min-resolution: 192dpi), screen and (min-width: 768px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/header_tablet-2x.jpg);
+  }
+  .hero .box {
+    background-image: url("photo@2x.png");
   }
 }
 @media screen and (min-width: 1200px) {
@@ -297,6 +303,9 @@ button {
 @media screen and (min-width: 1200px) and (min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (-webkit-min-device-pixel-ratio: 2), screen and (min-width: 1200px) and (min-resolution: 192dpi), screen and (min-width: 1200px) and (min-resolution: 2dppx) {
   .hero {
     background-image: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)), url(../../img/tityle-2x.jpg);
+  }
+  .hero .box {
+    background-image: url("photo@2x.png");
   }
 }
 
