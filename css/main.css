@@ -1150,11 +1150,10 @@ button {
   line-height: 1.1666666667;
   letter-spacing: 0.01em;
   color: var(--second-text);
-  margin-bottom: 20px;
 }
 
 .modal-input-group {
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   position: relative;
 }
 
