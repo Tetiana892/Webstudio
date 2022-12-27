@@ -20,12 +20,13 @@
       rgba(47, 48, 58, 0.4)
     ),
     url(../../img/header_tel.jpg);
+
   @include retina {
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
         rgba(47, 48, 58, 0.4)
       ),
-      url(../../img/header_tel-2x.jpg);
+      url(../../img/header_tel-2x\ -min.jpg);
   }
 
   @media screen and (min-width: 768px) {
@@ -35,12 +36,13 @@
         rgba(47, 48, 58, 0.4)
       ),
       url(../../img/header_tablet.jpg);
+
     @include retina {
       background-image: linear-gradient(
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../img/header_tablet-2x.jpg);
+        url(../../img/header_tab-2x-min.jpg);
     }
   }
   @media screen and (min-width: 1200px) {
@@ -57,7 +59,7 @@
           rgba(47, 48, 58, 0.4),
           rgba(47, 48, 58, 0.4)
         ),
-        url(../../img/tityle-2x.jpg);
+        url(../../img/tityle-2x-min.jpg);
     }
   }
 
