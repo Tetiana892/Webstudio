@@ -1400,8 +1400,8 @@ button {
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100vh;
-  width: 100vw;
+  height: 100%;
+  width: 100%;
   justify-content: space-between;
   padding-top: 48px;
   padding-left: 40px;
@@ -1410,4 +1410,8 @@ button {
 
 .mob-naviganion__main--current {
   color: var(--accent-color);
+}
+
+.container--mobile {
+  height: 100%;
 }/*# sourceMappingURL=main.css.map */
