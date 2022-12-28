@@ -64,7 +64,7 @@
 .aut-nav__mail.link {
   @extend %flex-aling;
 
-  @media screen and(min-width:1200px) {
+  @include for-desktop {
     padding: 32px 0;
   }
   font-weight: 500;
@@ -89,13 +89,13 @@
   }
 }
 .aut-nav.list {
-  @media screen and(min-width:1200px) {
+  @include for-desktop {
     display: flex;
   }
 }
 .aut-nav__item.link {
   display: block;
-  @media screen and(min-width:1200px) {
+  @include for-desktop {
     & + .link {
       margin-left: 50px;
     }

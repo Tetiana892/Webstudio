@@ -1,7 +1,7 @@
 .clients {
   padding-bottom: 60px;
   padding-top: 60px;
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     padding-bottom: 94px;
     padding-top: 94px;
   }
@@ -11,7 +11,7 @@
   &-title {
     display: block;
     margin-bottom: 30px;
-    @media screen and (min-width: 1200px) {
+    @include for-desktop {
       margin-bottom: 50px;
     }
     font-weight: 700;
@@ -31,10 +31,10 @@
   width: calc((100% - 60px) / 2);
   height: 92px;
 
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     width: calc((100% - 90px) / 3);
   }
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     width: 170px;
   }
 }

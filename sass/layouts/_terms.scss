@@ -2,7 +2,7 @@
   padding-bottom: 60px;
   padding-top: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     padding-top: 94px;
     padding-bottom: 0px;
   }
@@ -10,11 +10,11 @@
   background-color: var(--primari-header-color);
 }
 .terms.list {
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     width: 354px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     width: 270px;
   }
   &:not(:last-child) {
@@ -32,14 +32,14 @@
 }
 
 .container__terms {
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 60px) / 2);
     gap: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     flex-wrap: nowrap;
     flex-basis: calc((100% - 90px) / 4);
   }

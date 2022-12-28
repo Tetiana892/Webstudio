@@ -29,7 +29,7 @@
       url(..//../img/header_tel-2x\ -min.jpg);
   }
 
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     max-width: 768px;
     background-image: linear-gradient(
         rgba(47, 48, 58, 0.4),
@@ -45,7 +45,7 @@
         url(..//../img/header_tab-2x-min.jpg);
     }
   }
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;

@@ -8,13 +8,18 @@
   transition: opacity 250ms linear, visibility 250ms linear;
 }
 .modal {
-  min-width: 450px;
-  min-height: 605px;
-
-  @media screen and(min-width:768px) {
-    min-width: 528px;
-    min-height: 581px;
+  @include for-mobile {
+    width: 450px;
   }
+  @include for-tablet {
+    min-width: 450px;
+    min-height: 609px;
+  }
+  @include for-desktop {
+    width: 528px;
+    height: 581px;
+  }
+
   padding: 40px;
   position: absolute;
   top: 50%;
@@ -184,7 +189,7 @@
   letter-spacing: 0.03em;
   color: var(--second-text);
 
-  @media screen and(min-width:1200px) {
+  @include for-desktop {
     font-size: 14px;
     line-height: calc(24 / 14);
   }

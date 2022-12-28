@@ -2,7 +2,7 @@
   padding-top: 60px;
   padding-bottom: 60px;
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     padding-top: 94px;
     padding-bottom: 94px;
   }
@@ -14,10 +14,11 @@
 .portfolio--bottom {
   margin-bottom: 40px;
   flex-wrap: wrap;
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     justify-content: center;
   }
-  @media screen and (min-width: 1200px) {
+
+  @include for-desktop {
     margin-bottom: 50px;
   }
 }
@@ -51,7 +52,7 @@
 }
 .portfolio__item:nth-child(-n + 4) {
   margin-bottom: 15px;
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     margin-bottom: 0;
   }
 }
@@ -60,7 +61,7 @@
   list-style: none;
   background-color: var(--primari-header-color);
 
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     display: flex;
     flex-wrap: wrap;
 
@@ -73,17 +74,16 @@
 .work__menu {
   &:not(:last-child) {
     margin-bottom: 30px;
-    @media screen and (min-width: 768px) {
-      margin-bottom: 0;
-    }
   }
 
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
+    margin-bottom: 0;
     flex-basis: calc((100% / 2) - 30px);
     margin-left: 30px;
     margin-top: 30px;
   }
-  @media screen and (min-width: 1200px) {
+
+  @include for-desktop {
     flex-basis: calc((100% / 3) - 30px);
   }
   border: 1px solid var(--work-bg-color);

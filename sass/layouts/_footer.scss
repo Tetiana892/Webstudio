@@ -14,7 +14,7 @@
   flex-direction: column;
   justify-content: space-between;
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     align-items: baseline;
     flex-direction: row;
     text-align: left;
@@ -22,20 +22,20 @@
 }
 
 .footer-tablet {
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     display: flex;
     align-items: baseline;
     justify-content: space-around;
     margin-bottom: 60px;
   }
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     margin-bottom: 0;
     gap: 94px;
   }
 }
 .address__items {
   margin-bottom: 60px;
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     margin-bottom: 0;
   }
 }
@@ -95,13 +95,13 @@
   display: flex;
   justify-content: center;
   text-align: center;
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     justify-content: left;
     text-align: end;
   }
 }
 .form {
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     display: flex;
     align-items: flex-end;
   }
@@ -109,10 +109,10 @@
 
 .form__action {
   margin-top: 60px;
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     margin-top: 0;
   }
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     margin-right: 12px;
   }
 }
@@ -134,7 +134,14 @@
   padding-top: 15px;
   padding-bottom: 15px;
   padding-left: 16px;
-  width: 358px;
+  width: 100%;
+  @include for-tablet {
+    width: 450px;
+  }
+  @include for-desktop {
+    width: 358px;
+  }
+
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
   border-radius: 4px;

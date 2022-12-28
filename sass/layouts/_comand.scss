@@ -1,7 +1,7 @@
 .comand {
   padding-bottom: 60px;
   padding-top: 60px;
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     padding-bottom: 94px;
     padding-top: 94px;
   }
@@ -20,19 +20,19 @@
   padding-top: 30px;
   padding-bottom: 24px;
 
-  @media screen and(min-width:1200px) {
+  @include for-desktop {
     padding-bottom: 30px;
   }
 }
 .comand-list.list {
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     display: flex;
     flex-wrap: wrap;
     flex-basis: calc((100% - 30px) / 2);
     gap: 30px;
   }
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     flex-wrap: nowrap;
     flex-basis: calc((100% - 90px) / 4);
   }
@@ -42,7 +42,7 @@
   display: block;
   margin-bottom: 30px;
 
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     margin-bottom: 50px;
   }
 
@@ -62,12 +62,12 @@
   &:not(:last-child) {
     margin-bottom: 30px;
   }
-  @media screen and (min-width: 768px) {
+  @include for-tablet {
     &:not(:last-child) {
       margin-bottom: 0px;
     }
   }
-  @media screen and (min-width: 1200px) {
+  @include for-desktop {
     &:not(:last-child) {
       margin-right: 30px;
     }
