@@ -9,11 +9,12 @@
 }
 .modal {
   @include for-mobile {
-    width: 450px;
+    max-width: 450px;
+    height: auto;
   }
   @include for-tablet {
-    min-width: 450px;
-    min-height: 609px;
+    width: 450px;
+    height: 609px;
   }
   @include for-desktop {
     width: 528px;

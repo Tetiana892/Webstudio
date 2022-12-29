@@ -76,6 +76,7 @@ body {
 }
 
 img {
+  display: block;
   width: 100%;
   height: auto;
 }
@@ -1064,13 +1065,14 @@ button {
 }
 @media (min-width: 480px) {
   .modal {
-    width: 450px;
+    max-width: 450px;
+    height: auto;
   }
 }
 @media (min-width: 768px) {
   .modal {
-    min-width: 450px;
-    min-height: 609px;
+    width: 450px;
+    height: 609px;
   }
 }
 @media (min-width: 1200px) {
