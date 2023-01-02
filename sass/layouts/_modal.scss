@@ -13,12 +13,12 @@
     height: auto;
   }
   @include for-tablet {
-    width: 450px;
-    height: 609px;
+    min-width: 450px;
+    min-height: 609px;
   }
   @include for-desktop {
-    width: 528px;
-    height: 581px;
+    min-width: 528px;
+    min-height: 581px;
   }
 
   padding: 40px;
