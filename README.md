@@ -23,7 +23,7 @@ This is a two-page
 ## Link to the app
 
 **To use the application, please follow the link**
-[Webstudio App](https://tetiana892.github.io/goit-markup-hw-08/index.html).
+[Webstudio App](https://tetiana892.github.io/Webstudio/).
 
 ## Technologies and tools used in development:
 
